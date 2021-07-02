@@ -1,0 +1,16 @@
+.feature__box{
+    border: 2px solid $color-white;
+    border-radius: 50px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 1.5rem 4rem rgba($color-white,.15);
+    transition: all .3s;
+
+    &__icon{
+        color: white;
+        font-size: 6rem;
+    }
+    &:hover{
+        transform: translateY(-1.5rem) scale(1.1);
+    }
+}

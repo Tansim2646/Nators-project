@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// We should write media query in such order
+// If it is desktop-first approach then it will organized in descending order
+// If it is mobile-first approach then it will be organized in ascending order
+
+html {
+  font-size: 0.625rem;
+  @include respond(tab-land)
+  {
+    font-size: 56.25%;
+  }
+  @include respond(tab-port)
+  {
+    font-size: 50%;
+  }
+  
+  @include respond(big-desktop)
+  {
+    font-size: 60%;
+  }
+  
+  
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  padding: 3rem;
+  @include respond(tab-port)
+  {
+    padding: 0;
+  }
+}
