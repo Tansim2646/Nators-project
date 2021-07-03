@@ -17,7 +17,14 @@
         z-index: 2000;
         text-align: center;
         cursor: pointer;
-        
+
+        @include respond(tab-port)
+        {
+            top: 4rem;
+            right: 4rem;
+        }
+
+       
     }
 
     &__background{
@@ -32,6 +39,12 @@
         z-index: 1000;
         // transform: scale(70);
         transition: all .5s cubic-bezier(0.83, 0, 0.17, 1);
+
+        @include respond(tab-port)
+        {
+            top: 5rem;
+            right: 5rem;
+        }
         
 
 
